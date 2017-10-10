@@ -9,10 +9,10 @@
 
     var entry1 = entry[0];
 
-    if (entry1.getText() !== "test") {
-    throw new Error("Not stroring notes");
-  }
-  // assert.isTrue(entry1.text === "test");
+  //   if (entry1.getText() !== "test") {
+  //   throw new Error("Not stroring notes");
+  // }
+  assert.isTrue(entry1.getText() === "test");
 }
 
   testNoteListStoresNotes();

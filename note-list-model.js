@@ -8,8 +8,8 @@
     return this.list;
   };
 
-  NoteList.prototype.store = function(text) {
-    var note = new Note(text);
+  NoteList.prototype.store = function(text, noteConstructor = Note) { // this noteConstructor is a deafult in the argument
+    var note = new noteConstructor(text);
     this.list.push(note);
   };
 

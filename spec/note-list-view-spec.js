@@ -7,13 +7,15 @@
      throw new Error("There are no notes");
    }
 
-  notelist.store("testing text");
+  var text = "testing text";
+  notelist.store(text);
 
   var entries = notelist.display();
    var firstEntry = entries[0];
    var firstNote = firstEntry.getText();
 
-  if (view.render() !== "<ul><li><div>testing text</div></li></ul>" ) {
+
+  if (view.render() !== "<ul><li><div>"+text.substring(0,20)+"</div></li></ul>" ) {
      throw new Error("Not showing text");
    }
  };

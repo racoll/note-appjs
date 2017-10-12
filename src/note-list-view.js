@@ -17,6 +17,7 @@ NoteListView.prototype.render = function(){
      for (i = 0; i < entriesCount; i++){
        var note = entries[i];
        var noteText = note.getText();
+       noteText = noteText.substring(0, 20);
        view.push("<li><div>"+noteText+"</div></li>");
      }
      view.push("</ul>");

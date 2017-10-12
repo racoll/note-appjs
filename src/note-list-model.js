@@ -9,7 +9,7 @@
   };
 
   NoteList.prototype.store = function(text, NoteConstructor = Note) { // this noteConstructor is a deafult in the argument
-    var note = new noteConstructor(text);
+    var note = new NoteConstructor(text);
     this.list.push(note);
   };
 

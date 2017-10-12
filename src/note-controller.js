@@ -12,6 +12,8 @@
 
   NoteController.prototype.renderText = function() {
       // console.log(this.myNoteListView.render());
+      // console.log('x');
+      // console.log(this.myNoteListView.render());
       document.getElementById('app').innerHTML = this.myNoteListView.render();
   };
 

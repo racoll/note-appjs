@@ -18,5 +18,6 @@
   "homepage": "https://github.com/racoll/note-appjs#readme",
   "dependencies": {
     "http-server": "^0.10.0"
-  }
+  },
+  "devDependencies": {}
 }

@@ -1,11 +1,10 @@
 (function(exports) {
 
-  function SingleNoteView(note) {
+  function SingleNoteView(note = new Note) {
     this.note = note;
   }
 
-  SingleNoteView.prototype.render = function()
-  {
+  SingleNoteView.prototype.render = function() {
     return '<div>'+this.note.getText()+'</div>';
   };
 

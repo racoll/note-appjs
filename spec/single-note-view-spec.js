@@ -5,11 +5,11 @@
   function testSingleNoteView() {
 
     //Create something to test
-    var myNote = new Note('Favourite drink: seltzer');
+    var myNote = new Note(mytext);
     var mySingelNoteView = new SingleNoteView(myNote);
     var actual = mySingelNoteView.render();
 
-    var expected = '<div>Favourite drink: seltzer</div>';
+    var expected = '<div>'+ mytext +'</div>';
 
     assert.isTrue(actual === expected);
 }
